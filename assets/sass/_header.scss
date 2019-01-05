@@ -1,0 +1,107 @@
+@import "variables";
+
+.top-menu {
+  background-color: $first-color;
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  color: #757575;
+  font: 700 18px/50px $primary-font;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  span {
+    margin-left: 10px;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $first-text-color;
+  }
+}
+
+.burger {
+  @media (max-width: 460px) {
+    position: absolute;
+    right: 10px;
+    top: 55px;
+  }
+}
+
+.navbar {
+  padding-right: 0;
+  @media (min-width: 991px) {
+    padding-top: 0;
+  }
+}
+
+.nav {
+  border: none;
+  align-items: flex-end;
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.nav-item {
+  padding: 10px;
+
+  &:hover {
+    color: $first-color;
+    background-color: $second-color;
+    border-radius: 5px;
+  }
+}
+
+.nav-link {
+  padding: 0;
+  color: $menu-color;
+  font: 400 12px $primary-font;
+  text-transform: uppercase;
+  &:hover {
+    color: $first-text-color;
+  }
+}
+
+.menu-container {
+  @media (min-width: 1200px) {
+    padding-left: 100px;
+  }
+  @media (max-width: 460px) {
+    margin-top: 50px;
+  }
+}
+
+.social-list {
+  display: flex;
+  padding: 0;
+  .social-list-item {
+    margin-right: 5px;
+    i {
+      color: $menu-color;
+    }
+    .fa-twitter {
+      padding: 0 5px;
+      border-left: 1px solid $menu-color;
+      border-right: 2px solid $menu-color;
+      &:hover {
+        color: cyan;
+        cursor: pointer;
+      }
+    }
+    .fa-facebook {
+      &:hover {
+        color: blue;
+        cursor: pointer;
+      }
+    }
+    .fa-behance {
+      &:hover {
+        color: #000;
+        cursor: pointer;
+      }
+    }
+  }
+}
+

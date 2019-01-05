@@ -1,0 +1,85 @@
+.top-menu {
+  background-color: #fff; }
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  color: #757575;
+  font: 700 18px/50px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+  .logo span {
+    margin-left: 10px; }
+  .logo:hover {
+    text-decoration: none;
+    color: #3e3d3d; }
+
+@media (max-width: 460px) {
+  .burger {
+    position: absolute;
+    right: 10px;
+    top: 55px; } }
+
+.navbar {
+  padding-right: 0; }
+  @media (min-width: 991px) {
+    .navbar {
+      padding-top: 0; } }
+
+.nav {
+  border: none;
+  align-items: flex-end; }
+  @media (max-width: 991px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-end; } }
+
+.nav-item {
+  padding: 10px; }
+  .nav-item:hover {
+    color: #fff;
+    background-color: #d8d8d8;
+    border-radius: 5px; }
+
+.nav-link {
+  padding: 0;
+  color: #aaa;
+  font: 400 12px "Montserrat", sans-serif;
+  text-transform: uppercase; }
+  .nav-link:hover {
+    color: #3e3d3d; }
+
+@media (min-width: 1200px) {
+  .menu-container {
+    padding-left: 100px; } }
+
+@media (max-width: 460px) {
+  .menu-container {
+    margin-top: 50px; } }
+
+.social-list {
+  display: flex;
+  padding: 0; }
+  .social-list .social-list-item {
+    margin-right: 5px; }
+    .social-list .social-list-item i {
+      color: #aaa; }
+    .social-list .social-list-item .fa-twitter {
+      padding: 0 5px;
+      border-left: 1px solid #aaa;
+      border-right: 2px solid #aaa; }
+      .social-list .social-list-item .fa-twitter:hover {
+        color: cyan;
+        cursor: pointer; }
+    .social-list .social-list-item .fa-facebook:hover {
+      color: blue;
+      cursor: pointer; }
+    .social-list .social-list-item .fa-behance:hover {
+      color: #000;
+      cursor: pointer; }
+
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
