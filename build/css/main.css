@@ -1,5 +1,6 @@
 .top-menu {
-  background-color: #fff; }
+  background-color: #fff;
+  padding-top: 20px; }
 
 .logo {
   display: flex;
@@ -83,3 +84,59 @@
   src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
+
+.slider {
+  background: #000 url("../img/first-bg.png") center/cover no-repeat;
+  min-height: 700px; }
+
+.carousel {
+  max-height: 470px; }
+
+.carousel-item {
+  text-align: center; }
+
+.carousel-content-wrapper {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 30px 0; }
+  .carousel-content-wrapper .carousel-content-wrapper_item {
+    text-align: center; }
+    .carousel-content-wrapper .carousel-content-wrapper_item p {
+      color: #fff;
+      font: 400 14px/50px "Crimson Text", serif;
+      letter-spacing: 1.4px; }
+    .carousel-content-wrapper .carousel-content-wrapper_item h1 {
+      margin: 0;
+      color: #fff;
+      font: 400 36px/200px "Amsdam", sans-serif;
+      letter-spacing: 1px; }
+    .carousel-content-wrapper .carousel-content-wrapper_item .wave {
+      position: relative; }
+    .carousel-content-wrapper .carousel-content-wrapper_item .wave:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 10px;
+      background-size: 20px 10px;
+      background-image: radial-gradient(circle at 10px -5px, #fff 12px, transparent 12px); }
+    .carousel-content-wrapper .carousel-content-wrapper_item .wave:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      right: 0;
+      height: 10px;
+      background-size: 20px 10px;
+      background-image: radial-gradient(circle at 10px -5px, transparent 12px, #fff 12px); }
+
+.control-icon-size {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: #000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
