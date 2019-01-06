@@ -1,0 +1,63 @@
+@import "variables";
+@import "fonts";
+
+.services {
+  padding: 70px 0 85px;
+  background: url("../img/services-bg.png") center/cover no-repeat;
+  text-align: center;
+  &__section-header {
+    color: $first-color;
+  }
+  &__section-paragraph {
+    max-width: 1026px;
+    margin: 40px auto 70px;
+    color: #cfcfcf;
+  }
+}
+
+.services-list-item {
+  max-width: 270px;
+  position: relative;
+  border: 2px solid #d8d8d8;
+  border-top: none;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  &__section-paragraph {
+    max-width: 203px;
+    margin: 0 auto;
+    color: $first-color;
+  }
+  h5 {
+    max-width: 105px;
+    margin: 60px auto 25px;
+    color: #d8d8d8;
+    font: 700 13px $primary-font;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  i {
+    position: absolute;
+    top: -15px;
+    right: 45%;
+    color: $first-color;
+  }
+}
+
+.services-border1 {
+  border-top: 2px solid #d8d8d8;
+  width: 90px;
+  position: absolute;
+  left: 0;
+  @media (max-width: 400px) {
+    width: 80px;
+  }
+}
+.services-border2 {
+  border-top: 2px solid #d8d8d8;
+  width: 90px;
+  position: absolute;
+  right: -1px;
+  @media (max-width: 400px) {
+    width: 80px;
+  }
+}

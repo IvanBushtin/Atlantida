@@ -1,3 +1,36 @@
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background-color: #e3e3e3; }
+
+.section-header {
+  margin: 60px 0 25px;
+  color: #3e3d3d;
+  font: 400 20px "Amsdam", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.44px; }
+
+.section-paragraph {
+  color: #3e3d3d;
+  font: 400 14px/20px "Crimson Text", serif;
+  letter-spacing: 1.4px; }
+
+.section-button {
+  width: 135px;
+  height: 39px;
+  border: 2px solid #3e3d3d;
+  color: #3e3d3d;
+  background-color: transparent;
+  font: 700 13px "Montserrat", sans-serif;
+  letter-spacing: 1.5px;
+  cursor: pointer; }
+  .section-button:hover {
+    background-color: #aaa; }
+
 .top-menu {
   background-color: #fff;
   padding-top: 20px; }
@@ -87,7 +120,9 @@
 
 .slider {
   background: #000 url("../img/first-bg.png") center/cover no-repeat;
-  min-height: 700px; }
+  min-height: 700px;
+  text-align: center;
+  padding: 150px 0; }
 
 .carousel {
   max-height: 470px; }
@@ -116,7 +151,6 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: 0;
       right: 0;
       height: 10px;
       background-size: 20px 10px;
@@ -140,3 +174,144 @@
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.button {
+  width: 150px;
+  height: 45px;
+  margin-top: 45px;
+  position: relative;
+  border: 2px solid #f2f2f2;
+  background-color: transparent;
+  color: #fff;
+  font: 700 15px/40px "Montserrat", sans-serif;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  outline: none; }
+  .button:hover {
+    background-color: #aaa;
+    color: #3e3d3d;
+    border: 2px solid #3e3d3d; }
+  .button .Arrow {
+    position: absolute;
+    bottom: -45px;
+    left: 65px; }
+
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.about {
+  text-align: center;
+  padding: 75px 0 65px; }
+  .about__section-paragraph {
+    max-width: 1026px;
+    margin: 45px auto;
+    padding: 0 15px; }
+  .about__container {
+    padding: 0 0 50px;
+    background-color: #fff; }
+  .about__section-button {
+    background-color: #3e3d3d;
+    color: #cecece; }
+    .about__section-button:hover {
+      color: #3e3d3d; }
+
+.bg-img {
+  width: 100%;
+  height: 325px;
+  background-image: url("../img/about-bg.png"); }
+
+.stat-list {
+  margin-top: 35px; }
+  .stat-list .stat-list-item:nth-child(-n+3) {
+    border-right: 1px solid #b0b0b0; }
+
+.stat-list-item-caption {
+  max-width: 75px;
+  margin: 20px auto 30px;
+  color: #3e3d3d;
+  font: 700 13px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+
+.stat-list-item-number {
+  color: #3e3d3d;
+  font: 700 45px "Montserrat", sans-serif; }
+
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.services {
+  padding: 70px 0 85px;
+  background: url("../img/services-bg.png") center/cover no-repeat;
+  text-align: center; }
+  .services__section-header {
+    color: #fff; }
+  .services__section-paragraph {
+    max-width: 1026px;
+    margin: 40px auto 70px;
+    color: #cfcfcf; }
+
+.services-list-item {
+  max-width: 270px;
+  position: relative;
+  border: 2px solid #d8d8d8;
+  border-top: none;
+  margin-top: 20px;
+  padding-bottom: 40px; }
+  .services-list-item__section-paragraph {
+    max-width: 203px;
+    margin: 0 auto;
+    color: #fff; }
+  .services-list-item h5 {
+    max-width: 105px;
+    margin: 60px auto 25px;
+    color: #d8d8d8;
+    font: 700 13px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
+  .services-list-item i {
+    position: absolute;
+    top: -15px;
+    right: 45%;
+    color: #fff; }
+
+.services-border1 {
+  border-top: 2px solid #d8d8d8;
+  width: 90px;
+  position: absolute;
+  left: 0; }
+  @media (max-width: 400px) {
+    .services-border1 {
+      width: 80px; } }
+
+.services-border2 {
+  border-top: 2px solid #d8d8d8;
+  width: 90px;
+  position: absolute;
+  right: -1px; }
+  @media (max-width: 400px) {
+    .services-border2 {
+      width: 80px; } }
+
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.history {
+  padding: 60px 0 80px;
+  text-align: center;
+  background-color: #ededed; }
+  .history__section-header {
+    margin-top: 0; }
+  .history__section-paragraph {
+    max-width: 1010px;
+    margin: 40px auto; }

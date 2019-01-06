@@ -1,0 +1,15 @@
+@import "variables";
+@import "fonts";
+
+.history {
+  padding: 60px 0 80px;
+  text-align: center;
+  background-color: #ededed;
+  &__section-header {
+    margin-top: 0;
+  }
+  &__section-paragraph {
+    max-width: 1010px;
+    margin: 40px auto;
+  }
+}

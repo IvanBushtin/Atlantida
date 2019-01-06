@@ -1,0 +1,52 @@
+@import "variables";
+@import "fonts";
+
+.about {
+  text-align: center;
+  padding: 75px 0 65px;
+  &__section-paragraph {
+    max-width: 1026px;
+    margin: 45px auto;
+    padding: 0 15px;
+  }
+  &__container {
+    padding: 0 0 50px;
+    background-color: $first-color;
+  }
+  &__section-button {
+    background-color: $first-text-color;
+    color: #cecece;
+    &:hover {
+      color: $first-text-color;
+    }
+  }
+}
+
+.bg-img {
+  width: 100%;
+  height: 325px;
+  background-image: url("../img/about-bg.png");
+}
+
+.stat-list {
+  margin-top: 35px;
+  .stat-list-item {
+    &:nth-child(-n+3) {
+      border-right: 1px solid #b0b0b0;
+    }
+  }
+}
+
+.stat-list-item-caption {
+  max-width: 75px;
+  margin: 20px auto 30px;
+  color: $first-text-color;
+  font: 700 13px $primary-font;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.stat-list-item-number {
+  color: $first-text-color;
+  font: 700 45px $primary-font;
+}
