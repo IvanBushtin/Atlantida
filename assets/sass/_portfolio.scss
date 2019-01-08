@@ -5,8 +5,91 @@
   padding-top: 80px;
   text-align: center;
   background-color: $first-color;
+
   &__section-paragraph {
     max-width: 988px;
     margin: 40px auto 50px;
   }
+
+  &__section-button-1, &__section-button-2,
+  &__section-button-3, &__section-button-4 {
+    width: 100%;
+    height: 31px;
+    font-size: 11px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $first-color;
+      background-color: $first-text-color;
+    }
+  }
+
+  &__section-button-1 {
+    max-width: 59px;
+  }
+
+  &__section-button-2 {
+    max-width: 100px;
+  }
+
+  &__section-button-3 {
+    max-width: 132px;
+  }
+
+  &__section-button-4 {
+    max-width: 86px;
+  }
+}
+
+.grid {
+  max-width: 1600px;
+  margin: 60px auto 0;
+  background-color: #242424;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.grid-sizer,
+.grid-item {
+  width: 399px;
+  height: 252px;
+}
+
+.grid-item {
+  float: left;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.grid-item--height2 {
+  height: 417px;
+}
+
+.grid-item--height3 {
+  height: 271px;
+}
+
+.grid-item--height4 {
+  height: 303px;
+}
+
+.grid-item--height5 {
+  height: 385px;
+}
+
+.grid-item--height6 {
+  height: 230px;
+}
+
+.grid-item--height7 {
+  height: 459px;
+}
+
+.grid-item--height8 {
+  height: 436px;
 }

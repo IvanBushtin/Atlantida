@@ -1,3 +1,7 @@
-$(".burger").on("click", function () {
-    $(".nav").toggle();
+var $grid = $('.grid').imagesLoaded( function() {
+    $grid.masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        columnWidth: '.grid-sizer'
+    });
 });
