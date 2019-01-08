@@ -1,0 +1,70 @@
+@import "variables";
+@import "fonts";
+
+.team {
+  padding: 70px 0;
+  background: url("../img/Team-bg.png") center/cover no-repeat;
+  text-align: center;
+  &__section-paragraph {
+    max-width: 988px;
+    margin: 40px auto;
+  }
+}
+
+.team-list-item {
+  position: relative;
+  margin-top: 20px;
+}
+
+.team-caption {
+  height: 321px;
+  width: 256px;
+  position: absolute;
+  padding: 210px 0 30px 20px;
+  bottom: 8px;
+  left: 22px;
+  text-align: left;
+  background-color: #f6f6f6;
+  opacity: 0;
+  @media (max-width: 1199px) {
+    left: 32px;
+  }
+  @media (max-width: 991px) {
+    left: 231px;
+  }
+  @media (max-width: 767px) {
+    left: 141px;
+  }
+  @media (max-width: 575px) {
+    left: 160px;
+  }
+  @media (max-width: 550px) {
+    left: 10%;
+  }
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  h6 {
+    color: $first-text-color;
+    font: 700 13px/18px $primary-font;
+    letter-spacing: 1.5px;
+  }
+  span {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    color: $first-text-color;
+    font: italic 14px/18px $second-font;
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 40%;
+      background-color: $first-text-color;
+      left: 0;
+      top: 20px;
+    }
+  }
+}

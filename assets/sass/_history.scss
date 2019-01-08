@@ -23,7 +23,7 @@
   margin: 0 auto;
 }
 
-.timeline-start {
+.timeline-start, .timeline-center {
   width: 73px;
   height: 73px;
   margin: 0 auto;
@@ -33,6 +33,17 @@
   border-radius: 100%;
   border: 2px solid $first-text-color;
   text-align: center;
+}
+
+.timeline-center {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  margin-left: -38px;
+  background-color: #ededed;
+  @media (max-width: 400px) {
+    top: 89%;
+  }
 }
 
 .timeline-end {
@@ -54,11 +65,17 @@
 .conference-center-line {
   position: absolute;
   width: 2px;
-  height: 90%;
+  height: 93%;
   top: 73px;
   left: 50%;
   margin-left: -2px;
   background: $first-text-color;
+  @media (max-width: 500px) {
+    height: 94%;
+  }
+  @media (max-width: 354px) {
+    height: 95%;
+  }
 }
 
 #conference-timeline .conference-timeline-content {
@@ -83,6 +100,7 @@
     font: 700 11px/18px $primary-font;
   }
   p {
+    margin: 0;
     max-width: 480px;
     color: $first-text-color;
     font: 400 14px/20px $second-font;
@@ -103,15 +121,34 @@
   background-color: transparent;
   border: 1px solid $first-text-color;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
-  padding: 27px 25px;
+}
+
+.content-left {
+  padding: 30px 70px 30px 30px;
+}
+
+.content-right {
+  padding: 30px 30px 30px 70px;
 }
 
 .timeline-article .content-left-container {
   float: left;
+  margin-left: 37px;
+  margin-top: 10px;
 }
 
 .timeline-article .content-right-container {
   float: right;
+  margin-right: 40px;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+
+.container-colored {
+  background-color: $first-text-color;
+  h6, span, p {
+    color: $first-color;
+  }
 }
 
 .timeline-article .content-left:before,
@@ -147,7 +184,44 @@
   }
 }
 
-@media only screen and (max-width: 830px) {
+@media (max-width: 830px) {
+  .timeline-article .content-left-container {
+    margin-left: 20px;
+  }
+  .timeline-article .content-right-container {
+    margin-right: 20px;
+  }
+  .content-left, .content-right {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline-article .content-left-container {
+    margin-left: 15px;
+  }
+  .timeline-article .content-right-container {
+    margin-right: 15px;
+  }
+  .content-left, .content-right {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .timeline-article .content-left-container {
+    margin-left: 5px;
+  }
+  .timeline-article .content-right-container {
+    margin-right: 5px;
+  }
+  .content-left, .content-right {
+    padding: 5px;
+  }
+}
+
+
+/*@media only screen and (max-width: 830px) {
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
     margin: 0;
@@ -190,4 +264,4 @@
   .timeline-article p {
     margin: 0;
   }
-}
+}*/

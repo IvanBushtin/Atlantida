@@ -4,6 +4,9 @@
 .about {
   text-align: center;
   padding: 75px 0 65px;
+  &__section-header {
+    margin-top: 60px;
+  }
   &__section-paragraph {
     max-width: 1026px;
     margin: 45px auto;

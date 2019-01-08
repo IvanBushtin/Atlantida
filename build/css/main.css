@@ -10,7 +10,7 @@ body {
   font-weight: 400; }
 
 .section-header {
-  margin: 60px 0 25px;
+  margin-bottom: 25px;
   color: #3e3d3d;
   font: 400 20px "Amsdam", sans-serif;
   text-transform: uppercase;
@@ -208,6 +208,8 @@ body {
 .about {
   text-align: center;
   padding: 75px 0 65px; }
+  .about__section-header {
+    margin-top: 60px; }
   .about__section-paragraph {
     max-width: 1026px;
     margin: 45px auto;
@@ -324,7 +326,7 @@ body {
   width: 100%;
   margin: 0 auto; }
 
-.timeline-start {
+.timeline-start, .timeline-center {
   width: 73px;
   height: 73px;
   margin: 0 auto;
@@ -334,6 +336,16 @@ body {
   border-radius: 100%;
   border: 2px solid #3e3d3d;
   text-align: center; }
+
+.timeline-center {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  margin-left: -38px;
+  background-color: #ededed; }
+  @media (max-width: 400px) {
+    .timeline-center {
+      top: 89%; } }
 
 .timeline-end {
   width: 54px;
@@ -352,11 +364,17 @@ body {
 .conference-center-line {
   position: absolute;
   width: 2px;
-  height: 90%;
+  height: 93%;
   top: 73px;
   left: 50%;
   margin-left: -2px;
   background: #3e3d3d; }
+  @media (max-width: 500px) {
+    .conference-center-line {
+      height: 94%; } }
+  @media (max-width: 354px) {
+    .conference-center-line {
+      height: 95%; } }
 
 #conference-timeline .conference-timeline-content {
   padding-top: 67px;
@@ -377,6 +395,7 @@ body {
     color: #3e3d3d;
     font: 700 11px/18px "Montserrat", sans-serif; }
   .timeline-article p {
+    margin: 0;
     max-width: 480px;
     color: #3e3d3d;
     font: 400 14px/20px "Crimson Text", serif;
@@ -393,14 +412,29 @@ body {
   width: auto;
   background-color: transparent;
   border: 1px solid #3e3d3d;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
-  padding: 27px 25px; }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03); }
+
+.content-left {
+  padding: 30px 70px 30px 30px; }
+
+.content-right {
+  padding: 30px 30px 30px 70px; }
 
 .timeline-article .content-left-container {
-  float: left; }
+  float: left;
+  margin-left: 37px;
+  margin-top: 10px; }
 
 .timeline-article .content-right-container {
-  float: right; }
+  float: right;
+  margin-right: 40px;
+  margin-top: 40px;
+  margin-bottom: 110px; }
+
+.container-colored {
+  background-color: #3e3d3d; }
+  .container-colored h6, .container-colored span, .container-colored p {
+    color: #fff; }
 
 .timeline-article .content-left:before,
 .timeline-article .content-right:before {
@@ -430,36 +464,150 @@ body {
   .timeline-article .meta-date:last-child {
     top: 70px; }
 
-@media only screen and (max-width: 830px) {
+@media (max-width: 830px) {
+  .timeline-article .content-left-container {
+    margin-left: 20px; }
+  .timeline-article .content-right-container {
+    margin-right: 20px; }
+  .content-left, .content-right {
+    padding: 25px; } }
+
+@media (max-width: 600px) {
+  .timeline-article .content-left-container {
+    margin-left: 15px; }
+  .timeline-article .content-right-container {
+    margin-right: 15px; }
+  .content-left, .content-right {
+    padding: 10px; } }
+
+@media (max-width: 500px) {
+  .timeline-article .content-left-container {
+    margin-left: 5px; }
+  .timeline-article .content-right-container {
+    margin-right: 5px; }
+  .content-left, .content-right {
+    padding: 5px; } }
+
+/*@media only screen and (max-width: 830px) {
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
-    margin: 0; }
+    margin: 0;
+  }
   #conference-timeline .conference-center-line {
     margin-left: 0;
-    left: 50px; }
+    left: 50px;
+  }
   .timeline-article .meta-date {
     margin-left: 0;
-    left: 20px; }
+    left: 20px;
+  }
   .timeline-article .content-left-container,
   .timeline-article .content-right-container {
     max-width: 100%;
     width: auto;
     float: none;
     margin-left: 110px;
-    min-height: 53px; }
+    min-height: 53px;
+  }
   .timeline-article .content-left-container {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+  }
   .timeline-article .content-left,
   .timeline-article .content-right {
     padding: 10px 25px;
-    min-height: 65px; }
+    min-height: 65px;
+  }
   .timeline-article .content-left:before {
     content: "\f0d9";
     right: auto;
-    left: -8px; }
+    left: -8px;
+  }
   .timeline-article .content-right:before {
-    display: none; } }
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 400px) {
   .timeline-article p {
-    margin: 0; } }
+    margin: 0;
+  }
+}*/
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.team {
+  padding: 70px 0;
+  background: url("../img/Team-bg.png") center/cover no-repeat;
+  text-align: center; }
+  .team__section-paragraph {
+    max-width: 988px;
+    margin: 40px auto; }
+
+.team-list-item {
+  position: relative;
+  margin-top: 20px; }
+
+.team-caption {
+  height: 321px;
+  width: 256px;
+  position: absolute;
+  padding: 210px 0 30px 20px;
+  bottom: 8px;
+  left: 22px;
+  text-align: left;
+  background-color: #f6f6f6;
+  opacity: 0; }
+  @media (max-width: 1199px) {
+    .team-caption {
+      left: 32px; } }
+  @media (max-width: 991px) {
+    .team-caption {
+      left: 231px; } }
+  @media (max-width: 767px) {
+    .team-caption {
+      left: 141px; } }
+  @media (max-width: 575px) {
+    .team-caption {
+      left: 160px; } }
+  @media (max-width: 550px) {
+    .team-caption {
+      left: 10%; } }
+  .team-caption:hover {
+    opacity: 0.7;
+    cursor: pointer; }
+  .team-caption h6 {
+    color: #3e3d3d;
+    font: 700 13px/18px "Montserrat", sans-serif;
+    letter-spacing: 1.5px; }
+  .team-caption span {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    color: #3e3d3d;
+    font: italic 14px/18px "Crimson Text", serif; }
+    .team-caption span::after {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 40%;
+      background-color: #3e3d3d;
+      left: 0;
+      top: 20px; }
+
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.portfolio {
+  padding-top: 80px;
+  text-align: center;
+  background-color: #fff; }
+  .portfolio__section-paragraph {
+    max-width: 988px;
+    margin: 40px auto 50px; }
