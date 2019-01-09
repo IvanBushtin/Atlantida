@@ -1,0 +1,76 @@
+@import "variables";
+@import "fonts";
+
+.prices {
+  padding: 70px 0 90px;
+  text-align: center;
+  background-color: #e3e3e3;
+
+  &__section-paragraph {
+    max-width: 988px;
+    margin: 40px auto 80px;
+  }
+}
+
+.price-list-item {
+  max-width: 369px;
+  margin: 10px 20px;
+  padding: 45px 0 60px;
+  background-color: $first-color;
+
+  h6 {
+    color: $first-text-color;
+    font: 700 13px/18px $primary-font;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  span {
+    position: relative;
+    color: $first-text-color;
+    font: 700 70px $primary-font;
+    &::before {
+      display: block;
+      position: absolute;
+      right: 90px;
+      content: "$";
+      font-size: 24px;
+    }
+  }
+
+  p {
+    max-width: 175px;
+    margin: 50px auto;
+    color: $first-text-color;
+    font: italic 16px/30px $second-font;
+  }
+}
+.icon-wrapper {
+  width: 51px;
+  height: 50px;
+  margin: 25px auto 35px;
+  border: 2px solid $first-text-color;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::after {
+    display: block;
+    position: absolute;
+    left: 49px;
+    content: "";
+    height: 1px;
+    width: 90px;
+    background-color: $first-text-color;
+  }
+  &::before {
+    display: block;
+    position: absolute;
+    right: 49px;
+    content: "";
+    height: 1px;
+    width: 90px;
+    background-color: $first-text-color;
+  }
+}

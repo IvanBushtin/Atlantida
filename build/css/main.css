@@ -29,7 +29,8 @@ body {
   background-color: transparent;
   font: 700 13px "Montserrat", sans-serif;
   letter-spacing: 1.5px;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
   .section-button:hover {
     background-color: #aaa; }
 
@@ -641,6 +642,10 @@ body {
 .grid-item {
   width: 399px;
   height: 252px; }
+  @media (max-width: 400px) {
+    .grid-sizer,
+    .grid-item {
+      width: 320px; } }
 
 .grid-item {
   float: left; }
@@ -668,3 +673,70 @@ body {
 
 .grid-item--height8 {
   height: 436px; }
+
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.prices {
+  padding: 70px 0 90px;
+  text-align: center;
+  background-color: #e3e3e3; }
+  .prices__section-paragraph {
+    max-width: 988px;
+    margin: 40px auto 80px; }
+
+.price-list-item {
+  max-width: 369px;
+  margin: 10px 20px;
+  padding: 45px 0 60px;
+  background-color: #fff; }
+  .price-list-item h6 {
+    color: #3e3d3d;
+    font: 700 13px/18px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
+  .price-list-item span {
+    position: relative;
+    color: #3e3d3d;
+    font: 700 70px "Montserrat", sans-serif; }
+    .price-list-item span::before {
+      display: block;
+      position: absolute;
+      right: 90px;
+      content: "$";
+      font-size: 24px; }
+  .price-list-item p {
+    max-width: 175px;
+    margin: 50px auto;
+    color: #3e3d3d;
+    font: italic 16px/30px "Crimson Text", serif; }
+
+.icon-wrapper {
+  width: 51px;
+  height: 50px;
+  margin: 25px auto 35px;
+  border: 2px solid #3e3d3d;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .icon-wrapper::after {
+    display: block;
+    position: absolute;
+    left: 49px;
+    content: "";
+    height: 1px;
+    width: 90px;
+    background-color: #3e3d3d; }
+  .icon-wrapper::before {
+    display: block;
+    position: absolute;
+    right: 49px;
+    content: "";
+    height: 1px;
+    width: 90px;
+    background-color: #3e3d3d; }

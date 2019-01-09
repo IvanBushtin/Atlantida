@@ -30,6 +30,7 @@ body {
   font: 700 13px $primary-font;
   letter-spacing: 1.5px;
   cursor: pointer;
+  outline: none;
   &:hover {
     background-color: $menu-color;
   }
@@ -43,3 +44,4 @@ body {
 @import "history";
 @import "team";
 @import "portfolio";
+@import "prices";
