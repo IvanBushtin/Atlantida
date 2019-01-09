@@ -705,7 +705,7 @@ body {
     .price-list-item span::before {
       display: block;
       position: absolute;
-      right: 90px;
+      right: 102%;
       content: "$";
       font-size: 24px; }
   .price-list-item p {
@@ -740,3 +740,98 @@ body {
     height: 1px;
     width: 90px;
     background-color: #3e3d3d; }
+
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.looking {
+  padding: 35px 0 40px;
+  background-color: #2d2d2f;
+  text-align: center; }
+  .looking h4 {
+    color: #d8d8d8;
+    font: 700 16px/18px "Montserrat", sans-serif;
+    letter-spacing: 2px; }
+  .looking p {
+    margin-top: 20px;
+    color: #888;
+    font: italic 16px/20px "Crimson Text", serif; }
+  .looking__section-button {
+    border: 2px solid #e3e3e3;
+    color: #e3e3e3; }
+    .looking__section-button:hover {
+      background-color: #3e3d3d; }
+  .looking .looking-button {
+    padding-bottom: 10px; }
+
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.blog {
+  text-align: center;
+  padding-top: 80px; }
+  .blog__section-paragraph {
+    max-width: 988px;
+    margin: 40px auto 80px; }
+
+.blog-image {
+  max-width: 400px;
+  overflow: hidden;
+  margin: 0 auto; }
+  @media (max-width: 400px) {
+    .blog-image {
+      max-width: 320px; } }
+
+.blog-text {
+  max-width: 400px;
+  max-height: 412px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 50px 30px;
+  text-align: left;
+  background-color: #232325; }
+  .blog-text span {
+    position: relative;
+    color: #e3e3e3;
+    font: italic 12px/18px "Crimson Text", serif; }
+    .blog-text span::after {
+      display: block;
+      content: "";
+      height: 1px;
+      background-color: #565656;
+      width: 151px;
+      position: absolute;
+      top: 25px; }
+  .blog-text h6 {
+    margin: 30px 0 35px;
+    color: #e3e3e3;
+    font: 400 13px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
+  .blog-text p {
+    max-width: 316px;
+    color: #949494;
+    font: 400 14px/20px "Crimson Text", serif;
+    letter-spacing: 1.5px; }
+
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.clients {
+  background-color: #fff;
+  text-align: center;
+  padding: 80px 0 125px; }
+  .clients__section-paragraph {
+    max-width: 988px;
+    margin: 40px auto 75px; }
+  .clients li {
+    margin-top: 20px; }
