@@ -1,2 +1,94 @@
 @import "variables";
+@import "fonts";
+
+.footer {
+  padding: 50px 0;
+  background-color: #292929;
+  text-align: justify;
+
+  &__section-button {
+    color: #949494;
+
+    &:hover {
+      background-color: $first-text-color;
+      color: $first-color;
+    }
+  }
+
+  a {
+    margin-bottom: 40px;
+  }
+
+  p {
+    max-width: 361px;
+    color: #949494;
+    font: 400 14px/20px $second-font;
+    letter-spacing: 1.5px;
+  }
+
+  h6, .footer-span {
+    color: #e3e3e3;
+    font: 400 13px $primary-font;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  h6 {
+    margin: 25px 0;
+  }
+
+  .footer-span {
+    margin-top: 30px;
+    span {
+      &:hover {
+        cursor: pointer;
+        color: #949494;
+      }
+    }
+  }
+  ul {
+    margin-top: 30px;
+  }
+}
+
+.form-input, .form-textarea {
+  margin-bottom: 22px;
+  padding: 22px;
+  border: 2px solid #464646;
+  background-color: transparent;
+  color: #949494;
+  font: italic 14px $second-font;
+  letter-spacing: 1.5px;
+  outline: none;
+
+  &:hover {
+    background-color: $first-text-color;
+  }
+
+  &:focus {
+    background-color: transparent;
+    color: $first-color;
+  }
+}
+
+.form-input {
+  max-width: 373px;
+  width: 100%;
+  height: 56px;
+}
+
+.form-textarea {
+  max-width: 776px;
+  width: 100%;
+  height: 100px;
+  max-height: 100px;
+  min-height: 90px;
+}
+
+.footer-border {
+  max-width: 1169px;
+  width: 100%;
+  border-top: 1px solid #3e3e3e;
+  margin: 60px auto 40px;
+}
 

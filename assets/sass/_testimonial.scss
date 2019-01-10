@@ -1,0 +1,77 @@
+@import "variables";
+@import "fonts";
+
+.testimonial {
+  padding: 70px 0;
+  text-align: center;
+  background: url("../img/test-bg.png") center/cover no-repeat;
+
+  &__carousel-content-wrapper_item {
+    margin-bottom: 45px;
+
+    p {
+      max-width: 800px;
+      margin: 55px auto;
+      padding: 0 15px;
+      position: relative;
+      color: #efefef;
+      font: italic 20px/24px $second-font;
+    }
+
+    h6 {
+      margin-bottom: 18px;
+      color: #e3e3e3;
+      font: 400 13px $primary-font;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    span {
+      color: #e3e3e3;
+      font: italic 14px $second-font;
+    }
+
+    .quote-left, .quote-right {
+      position: absolute;
+      color: #efefef;
+      font: italic 93px $second-font;
+    }
+
+    .quote-left {
+      left: -1%;
+      top: -30%;
+      @media (max-width: 991px) {
+        left: 0;
+      }
+      @media (max-width: 400px) {
+        top: 0;
+        left: -4%;
+      }
+    }
+
+    .quote-right {
+      right: 20%;
+      top: -50%;
+      @media (max-width: 991px) {
+        right: 2%;
+      }
+      @media (max-width: 767px) {
+        right: 10%;
+        top: 0;
+      }
+      @media (max-width: 400px) {
+        right: 5%;
+        top: 50%;
+      }
+    }
+  }
+}
+
+.carousel-indicators {
+  li {
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+    border-radius: 100%;
+  }
+}
