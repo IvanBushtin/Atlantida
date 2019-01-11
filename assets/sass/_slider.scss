@@ -15,6 +15,9 @@
 .carousel-item {
   text-align: center;
 }
+.carousel-control-prev, .carousel-control-next {
+  cursor: pointer;
+}
 
 .carousel-content-wrapper {
   max-width: 516px;

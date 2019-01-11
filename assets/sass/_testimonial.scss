@@ -6,6 +6,10 @@
   text-align: center;
   background: url("../img/test-bg.png") center/cover no-repeat;
 
+  &__carousel-content-wrapper {
+    max-width: 800px;
+  }
+
   &__carousel-content-wrapper_item {
     margin-bottom: 45px;
 
