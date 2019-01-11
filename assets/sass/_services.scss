@@ -5,9 +5,11 @@
   padding: 70px 0 85px;
   background: url("../img/services-bg.png") center/cover no-repeat;
   text-align: center;
+
   &__section-header {
     color: $first-color;
   }
+
   &__section-paragraph {
     max-width: 1026px;
     margin: 40px auto 70px;
@@ -22,11 +24,13 @@
   border-top: none;
   margin-top: 20px;
   padding-bottom: 40px;
+
   &__section-paragraph {
     max-width: 203px;
     margin: 0 auto;
     color: $first-color;
   }
+
   h5 {
     max-width: 105px;
     margin: 60px auto 25px;
@@ -35,6 +39,7 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
   }
+
   i {
     position: absolute;
     top: -15px;
@@ -52,6 +57,7 @@
     width: 80px;
   }
 }
+
 .services-border2 {
   border-top: 2px solid #d8d8d8;
   width: 90px;

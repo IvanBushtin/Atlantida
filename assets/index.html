@@ -30,33 +30,33 @@
             </button>
 
             <div class="collapse navbar-collapse menu-container order-11" id="navbarSupportedContent">
-                <ul class="nav">
+                <ul class="nav" id="menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">about</a>
+                        <a href="#about" class="nav-link">about</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link photo">services</a>
+                        <a href="#services" class="nav-link photo">services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">history</a>
+                        <a href="#history" class="nav-link">history</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">team</a>
+                        <a href="#team" class="nav-link">team</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">portfolio</a>
+                        <a href="#portfolio" class="nav-link">portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">prices</a>
+                        <a href="#prices" class="nav-link">prices</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">blog</a>
+                        <a href="#blog" class="nav-link">blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">contact</a>
+                        <a href="#contact" class="nav-link">contact</a>
                     </li>
                 </ul>
             </div>
@@ -69,56 +69,60 @@
     </header>
 </div>
 <div class="slider">
-    <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="d-block carousel-content-wrapper">
-                    <div class="carousel-content-wrapper_item">
-                        <p>Design Studio and Digital Agency</p>
-                        <div class="wave"></div>
-                        <h1>WE ARE ATLANTIDA</h1>
-                        <div class="wave"></div>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block carousel-content-wrapper">
+                        <div class="carousel-content-wrapper_item">
+                            <p>Design Studio and Digital Agency</p>
+                            <div class="wave"></div>
+                            <h1>WE ARE ATLANTIDA</h1>
+                            <div class="wave"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-block carousel-content-wrapper">
-                    <div class="carousel-content-wrapper_item">
-                        <p>Design Studio and Digital Agency</p>
-                        <div class="wave"></div>
-                        <h1>WE ARE ATLANTIDA</h1>
-                        <div class="wave"></div>
+                <div class="carousel-item">
+                    <div class="d-block carousel-content-wrapper">
+                        <div class="carousel-content-wrapper_item">
+                            <p>Design Studio and Digital Agency</p>
+                            <div class="wave"></div>
+                            <h1>WE ARE ATLANTIDA</h1>
+                            <div class="wave"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-block carousel-content-wrapper">
-                    <div class="carousel-content-wrapper_item">
-                        <p>Design Studio and Digital Agency</p>
-                        <div class="wave"></div>
-                        <h1>WE ARE ATLANTIDA</h1>
-                        <div class="wave"></div>
+                <div class="carousel-item">
+                    <div class="d-block carousel-content-wrapper">
+                        <div class="carousel-content-wrapper_item">
+                            <p>Design Studio and Digital Agency</p>
+                            <div class="wave"></div>
+                            <h1>WE ARE ATLANTIDA</h1>
+                            <div class="wave"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                   data-slide="prev">
                 <span class="carousel-control-prev-icon control-icon-size" aria-hidden="true">
                     <i class="fas fa-angle-left"></i>
                 </span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                   data-slide="next">
                 <span class="carousel-control-next-icon control-icon-size" aria-hidden="true">
                     <i class="fas fa-angle-right"></i>
                 </span>
-                <span class="sr-only">Next</span>
-            </a>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
+        <button class="button">Get started <img src="img/Arrow.png" alt="arrow" class="Arrow"></button>
     </div>
-    <button class="button">Get started <img src="img/Arrow.png" alt="arrow" class="Arrow"></button>
 </div>
-<section class="about container-fluid">
+<section id="about" class="about container-fluid">
     <div class="container about__container">
         <div class="bg-img"></div>
         <h2 class="section-header about__section-header">About us</h2>
@@ -164,7 +168,7 @@
         </ul>
     </div>
 </section>
-<section class="services">
+<section id="services" class="services">
     <div class="container">
         <h2 class="section-header services__section-header">Services</h2>
         <img src="img/wave-white.png" alt="wave">
@@ -225,7 +229,7 @@
         </ul>
     </div>
 </section>
-<section class="history">
+<section id="history" class="history">
     <div class="container">
         <h2 class="section-header history__section-header">history</h2>
         <img src="img/wave.png" alt="wave" class="wave-header">
@@ -322,7 +326,7 @@
         <div class="timeline-end"><i class="far fa-lightbulb"></i></div>
     </section>
 </section>
-<section class="team">
+<section id="team" class="team">
     <div class="container">
         <h2 class="section-header">our team</h2>
         <img src="img/wave.png" alt="wave">
@@ -372,7 +376,7 @@
         </ul>
     </div>
 </section>
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
     <div class="container">
         <h2 class="section-header">portfolio</h2>
         <img src="img/wave.png" alt="wave">
@@ -398,7 +402,7 @@
         <div class="grid-item"><img src="img/port-8.png" alt="photo"></div>
     </div>
 </section>
-<section class="prices">
+<section id="prices" class="prices">
     <div class="container">
         <h2 class="section-header">Prices</h2>
         <img src="img/wave.png" alt="wave">
@@ -479,7 +483,7 @@
         </div>
     </div>
 </div>
-<section class="blog">
+<section id="blog" class="blog">
     <div class="container">
         <h2 class="section-header">Blog</h2>
         <img src="img/wave.png" alt="wave">
@@ -626,28 +630,8 @@
         </div>
     </div>
 </section>
-<div class="map">
-    <div class="map-responsive">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.371885763322!2d32.
-                064469515271156!3d49.439687879348675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b7977eff1
-                49%3A0xb848bccbac9df152!2z0LHRg9C70YzQstCw0YAg0KjQtdCy0YfQtdC90LrQsCwgMjU4LCDQp9C10YDQutCw0YHQuCwg0KfQt
-                dGA0LrQsNGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCAxODAwMA!5e0!3m2!1suk!2sua!4v1545229988913">
-        </iframe>
-        <img src="img/map-mark.png" alt="mark" class="map-mark">
-    </div>
-</div>
 <div id="Map" class="myMap"></div>
-<script>
-    function initMap() {
-        var opt = {
-            center: {lat: 49.440047, lng: 32.066653},
-            zoom: 17,
-        };
-
-        var map = new google.maps.Map(document.getElementById("Map"), opt);
-    }
-</script>
-<footer class="footer">
+<footer id="contact" class="footer">
     <div class="container">
         <a href="index.html" class="logo"><img src="img/Logo.png" alt="logo"><span>Atlantida</span></a>
         <div class="row justify-content-center">
@@ -699,7 +683,6 @@
         <p class="">Copyright © 2015 Atlantida Theme</p>
     </div>
 </footer>
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -711,8 +694,9 @@
         crossorigin="anonymous"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJAKQtEvQm3uwrHCXiqA8z9HyEHTlThjo&callback=initMap"
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDsJ_Esx7FesVBGto2SXzSpwQujEgz19Y&callback=initMap"
         async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

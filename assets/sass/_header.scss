@@ -3,6 +3,9 @@
 .top-menu {
   background-color: $first-color;
   padding-top: 20px;
+  @media (max-width: 345px) {
+    padding-bottom: 25px;
+  }
 }
 
 .logo {
@@ -12,9 +15,11 @@
   font: 700 18px/50px $primary-font;
   text-transform: uppercase;
   letter-spacing: 2px;
+
   span {
     margin-left: 10px;
   }
+
   &:hover {
     text-decoration: none;
     color: $first-text-color;
@@ -22,10 +27,10 @@
 }
 
 .burger {
-  @media (max-width: 460px) {
+  @media (max-width: 345px) {
     position: absolute;
-    right: 10px;
-    top: 55px;
+    right: 5px;
+    top: 44px;
   }
 }
 
@@ -60,6 +65,7 @@
   color: $menu-color;
   font: 400 12px $primary-font;
   text-transform: uppercase;
+
   &:hover {
     color: $first-text-color;
   }
@@ -69,34 +75,40 @@
   @media (min-width: 1200px) {
     padding-left: 100px;
   }
-  @media (max-width: 460px) {
-    margin-top: 50px;
+  @media (max-width: 345px) {
+    margin-top: 25px;
   }
 }
 
 .social-list {
   display: flex;
   padding: 0;
+
   .social-list-item {
     margin-right: 5px;
+
     i {
       color: $menu-color;
     }
+
     .fa-twitter {
       padding: 0 5px;
       border-left: 1px solid $menu-color;
       border-right: 2px solid $menu-color;
+
       &:hover {
         color: cyan;
         cursor: pointer;
       }
     }
+
     .fa-facebook {
       &:hover {
         color: blue;
         cursor: pointer;
       }
     }
+
     .fa-behance {
       &:hover {
         color: #000;

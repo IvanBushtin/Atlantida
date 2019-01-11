@@ -38,6 +38,7 @@
 
   &__section-button-4 {
     max-width: 86px;
+    margin-top: 10px;
   }
 }
 
@@ -52,6 +53,7 @@
     clear: both;
   }
 }
+
 .grid-sizer,
 .grid-item {
   width: 399px;
@@ -63,6 +65,7 @@
 
 .grid-item {
   float: left;
+
   img {
     display: block;
     width: 100%;

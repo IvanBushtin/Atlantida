@@ -39,6 +39,7 @@
 
   .footer-span {
     margin-top: 30px;
+
     span {
       &:hover {
         cursor: pointer;
@@ -46,8 +47,10 @@
       }
     }
   }
+
   ul {
     margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
 
