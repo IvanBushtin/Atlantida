@@ -636,6 +636,17 @@
         <img src="img/map-mark.png" alt="mark" class="map-mark">
     </div>
 </div>
+<div id="Map" class="myMap"></div>
+<script>
+    function initMap() {
+        var opt = {
+            center: {lat: 49.440047, lng: 32.066653},
+            zoom: 17,
+        };
+
+        var map = new google.maps.Map(document.getElementById("Map"), opt);
+    }
+</script>
 <footer class="footer">
     <div class="container">
         <a href="index.html" class="logo"><img src="img/Logo.png" alt="logo"><span>Atlantida</span></a>
@@ -700,6 +711,8 @@
         crossorigin="anonymous"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJAKQtEvQm3uwrHCXiqA8z9HyEHTlThjo&callback=initMap"
+        async defer></script>
 <script src="js/script.js"></script>
 </body>
 </html>

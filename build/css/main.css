@@ -926,6 +926,10 @@ body {
     left: 47.9%;
     top: 35%; }
 
+.myMap {
+  width: 100%;
+  height: 515px; }
+
 @font-face {
   font-family: 'Amsdam';
   src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
