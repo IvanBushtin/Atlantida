@@ -111,3 +111,19 @@
     left: 65px;
   }
 }
+.blog-slider {
+  padding: 110px 0;
+  min-height: auto;
+  background: url("../img/blog-bg.png") center/cover no-repeat;
+  .way {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .blog-wave {
+    width: 60%!important;
+    margin: 0 auto;
+  }
+  .carousel-content-wrapper {
+    padding: 0;
+  }
+}
