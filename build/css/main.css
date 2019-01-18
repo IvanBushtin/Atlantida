@@ -650,7 +650,8 @@ body {
       color: #fff;
       background-color: #3e3d3d; }
   .portfolio__section-button-1 {
-    max-width: 59px; }
+    max-width: 59px;
+    margin-bottom: 60px; }
   .portfolio__section-button-2 {
     max-width: 100px; }
   .portfolio__section-button-3 {
@@ -661,7 +662,7 @@ body {
 
 .grid {
   max-width: 1600px;
-  margin: 60px auto 0;
+  margin: 0 auto;
   background-color: #242424; }
   .grid:after {
     content: '';
@@ -670,8 +671,7 @@ body {
 
 .grid-sizer,
 .grid-item {
-  width: 399px;
-  height: 252px; }
+  width: 25%; }
   @media (max-width: 400px) {
     .grid-sizer,
     .grid-item {
@@ -679,9 +679,6 @@ body {
 
 .grid-item {
   float: left; }
-  .grid-item img {
-    display: block;
-    width: 100%; }
 
 .grid-item--height2 {
   height: 417px; }
@@ -1017,3 +1014,68 @@ body {
   width: 100%;
   border-top: 1px solid #3e3e3e;
   margin: 60px auto 40px; }
+
+@font-face {
+  font-family: 'Amsdam';
+  src: url("../fonts/Amsdam_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background-color: #e3e3e3; }
+
+.posts {
+  text-align: left;
+  color: #3e3d3d; }
+  .posts .grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent; }
+    .posts .grid .grid-item--height10 {
+      max-height: 721px; }
+    .posts .grid .grid-item--height11 {
+      max-height: 807px; }
+    .posts .grid .grid-item--height12 {
+      max-height: 665px; }
+    .posts .grid .grid-item--height13 {
+      max-height: 661px; }
+    .posts .grid .grid-item--height14 {
+      max-height: 807px; }
+    .posts .grid .grid-item--height15 {
+      max-height: 763px; }
+    .posts .grid .grid-item--height16 {
+      max-height: 661px; }
+    .posts .grid .grid-item--height17 {
+      max-height: 807px; }
+    .posts .grid .grid-item--height18 {
+      max-height: 763px; }
+  .posts .grid-sizer,
+  .posts .grid-item {
+    width: 33%; }
+  .posts .grid-item {
+    margin: 10px 0; }
+    .posts .grid-item h5 {
+      margin: 40px 0 15px;
+      font: 700 16px "Montserrat", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1.8px; }
+    .posts .grid-item span {
+      font: italic 14px "Crimson Text", serif; }
+    .posts .grid-item p {
+      max-width: 346px;
+      margin-bottom: 30px;
+      font: 400 14px "Crimson Text", serif;
+      letter-spacing: 1.4px; }
+  .posts .posts-list {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 30px;
+    padding: 13px 0 9px 6px;
+    border-top: 1px solid #b7b7b7;
+    border-bottom: 1px solid #b7b7b7; }
+    .posts .posts-list li {
+      margin-right: 10px;
+      color: #818181;
+      font: italic 14px "Crimson Text", serif; }
+    .posts .posts-list img {
+      width: auto; }

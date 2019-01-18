@@ -26,6 +26,7 @@
 
   &__section-button-1 {
     max-width: 59px;
+    margin-bottom: 60px;
   }
 
   &__section-button-2 {
@@ -44,7 +45,7 @@
 
 .grid {
   max-width: 1600px;
-  margin: 60px auto 0;
+  margin: 0 auto;
   background-color: #242424;
 
   &:after {
@@ -56,8 +57,7 @@
 
 .grid-sizer,
 .grid-item {
-  width: 399px;
-  height: 252px;
+  width: 25%;
   @media(max-width: 400px) {
     width: 320px;
   }
@@ -65,11 +65,6 @@
 
 .grid-item {
   float: left;
-
-  img {
-    display: block;
-    width: 100%;
-  }
 }
 
 .grid-item--height2 {
